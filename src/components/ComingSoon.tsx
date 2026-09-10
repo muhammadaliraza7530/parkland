@@ -1,6 +1,5 @@
 import { Link } from "@tanstack/react-router";
 import { ArrowLeft } from "lucide-react";
-import logoAsset from "@/assets/parkland-logo.webp.asset.json";
 
 export function ComingSoon({ section }: { section: string }) {
   return (
@@ -9,19 +8,19 @@ export function ComingSoon({ section }: { section: string }) {
       <div className="absolute inset-x-0 top-20 h-px bg-gradient-to-r from-transparent via-primary/50 to-transparent" />
       <div className="relative mx-auto w-full max-w-3xl text-center">
         <img
-          src={logoAsset.url}
-          alt="Parkland Real Estate Group"
+          src="/logo.jpeg"
+          alt="Parkland Real Estate"
           className="mx-auto w-full max-w-[280px] object-contain sm:max-w-[360px]"
         />
         <p className="mt-10 text-[10px] font-bold uppercase tracking-[0.32em] text-primary sm:text-xs">
           {section}
         </p>
         <h1 className="mt-4 text-4xl font-extrabold uppercase leading-none sm:text-6xl lg:text-7xl">
-          Coming Soon
+          Parkland Properties
         </h1>
         <div className="mx-auto mt-7 h-px w-24 bg-primary" />
         <p className="mx-auto mt-7 max-w-xl text-sm leading-relaxed text-muted-foreground sm:text-base">
-          We are preparing this space with exceptional properties and thoughtful real estate opportunities.
+          Discover verified homes, plots, and commercial opportunities across DHA Lahore.
         </p>
         <Link
           to="/"

@@ -1,5 +1,3 @@
-import logoAsset from "@/assets/parkland-logo.webp.asset.json";
-
 /**
  * Single source of truth for all site content.
  * Every media file lives in /public and is referenced with an absolute path,
@@ -7,7 +5,7 @@ import logoAsset from "@/assets/parkland-logo.webp.asset.json";
  */
 
 export const img = {
-  logo: logoAsset.url,
+  logo: "/logo.jpeg",
 
   // Photoreal hero / feature photography
   spanishVilla: "/homes/hero-spanish.jpg",
@@ -26,182 +24,221 @@ export const img = {
 export const showreelUrl = "/video/showreel.mp4";
 
 export const site = {
-  name: "Parkland Real Estate Group",
+  name: "Parkland Real Estate",
   short: "Parkland",
-  fullName: "Parkland Real Estate Group",
-  tagline: "Trusted Real Estate Opportunities",
+  fullName: "Parkland Real Estate",
+  tagline: "Smart Deals. Real Returns.",
   logo: img.logo,
-  address: "DHA Phase 6, Lahore, Punjab, Pakistan",
-  addressShort: "New Super Town, Lahore",
-  email: "aspiringtalks@gmail.com",
-  phone: "0306 0221896",
-  phoneTel: "+923060221896",
-  facebook: "https://facebook.com/AspiringHomes",
-  instagram: "https://instagram.com/aspiringhomesofficial",
-  youtube: "https://youtube.com/@AspiringHomes",
+  address: "Plaza No 2, First Floor, Sector L, Phase-6, DHA, Lahore, Pakistan, 54000",
+  addressShort: "DHA Phase-6, Lahore",
+  email: "info@parklandrealestate.pk",
+  phone: "0321 8464704",
+  phoneTel: "+923218464704",
+  facebook: "https://facebook.com/parklandrealestate",
+  instagram: "https://instagram.com/parklandrealestate",
+  youtube: "https://youtube.com/@parklandrealestate",
   whatsapp:
-    "https://wa.me/923060221896?text=Hello%20Parkland%20Real%20Estate%20Group%2C%20I%20would%20like%20to%20discuss%20a%20property.",
-  hours: [
-    { day: "Monday to Thursday", time: "9am to 7pm" },
-    { day: "Friday", time: "9am to 12pm & 3pm to 7pm" },
-    { day: "Saturday", time: "9am to 5pm" },
-    { day: "Sunday", time: "By appointment" },
-  ],
+    "https://wa.me/923218464704?text=Hello%20Parkland%20Real%20Estate%2C%20I%20would%20like%20to%20discuss%20a%20property.",
+  hours: [{ day: "Every day", time: "Always open" }],
 };
 
 export const navLinks = [
   { to: "/", label: "Home" },
   { to: "/about", label: "About" },
   { to: "/services", label: "Services" },
-  { to: "/projects", label: "Projects" },
+  { to: "/projects", label: "Properties" },
   { to: "/contact", label: "Contact" },
 ];
 
 export const heroSlides = [
   {
-    title: "We design and build the home you keep imagining",
+    title: "Your Trusted Partner for DHA Lahore Properties",
     highlight:
-      "Architecture, interiors and full construction — planned, drawn and executed by one team from concept to handover.",
+      "Buy. Sell. Invest. With Confidence. 100% verified deals, a transparent process, and maximum returns.",
     image: img.luxuryVilla,
   },
   {
-    title: "Spanish, classical and modern homes",
+    title: "Luxury Homes. Prime Plots. Real Returns.",
     highlight:
-      "Arched colonnades, terracotta roofs or sharp contemporary lines — we build the language your family loves.",
+      "Discover carefully selected residential and commercial opportunities across DHA Lahore.",
     image: img.spanishVilla,
   },
   {
-    title: "Making quality houses since 2019",
+    title: "DHA Lahore, Explained Clearly",
     highlight:
-      "From the first 2D plan to the final coat of paint, our designers and site teams turn your plot into a home.",
+      "Local experts help you understand every phase, price, document, and opportunity before you decide.",
     image: img.luxuryHouse,
   },
   {
-    title: "Concept to creation, under one roof",
+    title: "A Smarter Way to Move Property",
     highlight:
-      "Grey structure, finishing, interiors and 3D visualisation delivered across Lahore, Faisalabad and Sialkot.",
+      "From your first requirement to transfer, our on-ground team handles the details with you.",
     image: img.courtyard,
   },
 ];
 
 export const stats = [
-  { value: "2019", label: "Building since" },
-  { value: "50+", label: "Homes designed & built" },
-  { value: "3", label: "Cities served" },
+  { value: "6K+", label: "Followers" },
+  { value: "100%", label: "Recommended" },
+  { value: "100+", label: "Happy clients" },
 ];
 
 /** Branded social posts — shown full-frame, never cropped. */
 export const posts = [
-  { image: "/posts/post-1.jpg", title: "Modern Facade Residence", location: "Sialkot", tag: "Coming Soon" },
-  { image: "/posts/post-2.jpg", title: "Crafting Classic Beauty", location: "Lahore", tag: "In Progress" },
-  { image: "/posts/post-3.jpg", title: "Concept to Creation", location: "Lahore", tag: "In Progress" },
-  { image: "/posts/post-4.jpg", title: "Classical Grand Residence", location: "Faisalabad", tag: "Coming Soon" },
-  { image: "/posts/post-5.jpg", title: "Classic Villa Handover", location: "Lahore", tag: "Completed" },
-  { image: "/posts/post-6.jpg", title: "Building Dreams", location: "Lahore", tag: "Under Construction" },
-  { image: "/posts/post-7.jpg", title: "Constructing Excellence", location: "Lahore", tag: "Under Construction" },
-  { image: "/posts/post-8.jpg", title: "The Reflection — Night", location: "Sialkot", tag: "Coming Soon" },
-  { image: "/posts/post-9.jpg", title: "The Reflection — Duplex", location: "Sialkot", tag: "Coming Soon" },
+  {
+    image: "/posts/post-1.jpg",
+    title: "DHA Phase 6 Luxury Home",
+    location: "DHA Lahore",
+    tag: "Featured property",
+  },
+  {
+    image: "/posts/post-2.jpg",
+    title: "Prime Residential Plot",
+    location: "DHA Lahore Phase 9",
+    tag: "Verified listing",
+  },
+  {
+    image: "/posts/post-3.jpg",
+    title: "DHA Commercial Opportunity",
+    location: "DHA Lahore Phase 8",
+    tag: "Investment pick",
+  },
+  {
+    image: "/posts/post-4.jpg",
+    title: "Family Villa for Sale",
+    location: "DHA Lahore Phase 5",
+    tag: "Available now",
+  },
+  {
+    image: "/posts/post-5.jpg",
+    title: "Commercial Building",
+    location: "DHA Lahore Phase 6",
+    tag: "Verified listing",
+  },
+  {
+    image: "/posts/post-6.jpg",
+    title: "Investment Advisory",
+    location: "All DHA Lahore phases",
+    tag: "Market insight",
+  },
+  {
+    image: "/posts/post-7.jpg",
+    title: "Buy, Sell, Invest",
+    location: "DHA Lahore",
+    tag: "Parkland advice",
+  },
+  {
+    image: "/posts/post-8.jpg",
+    title: "DHA Phase Guide",
+    location: "DHA Lahore",
+    tag: "Local insight",
+  },
+  {
+    image: "/posts/post-9.jpg",
+    title: "Smart Property Decisions",
+    location: "DHA Lahore",
+    tag: "Parkland advice",
+  },
 ];
 
 export const videoGallery = [
-  { src: "/videogrally/video1.mp4", poster: img.luxuryVilla, title: "Project Showreel", caption: "Design to handover" },
-  { src: "/videogrally/video2.mp4", poster: img.spanishVilla, title: "Spanish Villa Walkthrough", caption: "Elevation study" },
-  { src: "/videogrally/video3.mp4", poster: img.luxuryHouse, title: "Site Progress Film", caption: "Grey structure" },
-  { src: "/videogrally/video4.mp4", poster: img.courtyard, title: "Interior Reveal", caption: "Finishing stage" },
+  {
+    src: "/videogrally/video1.mp4",
+    title: "DHA Lahore Property Tour",
+    caption: "Explore verified opportunities",
+  },
+  {
+    src: "/videogrally/video2.mp4",
+    title: "Luxury Home Walkthrough",
+    caption: "Residential property",
+  },
+  {
+    src: "/videogrally/video3.mp4",
+    title: "Commercial Property Tour",
+    caption: "Business and investment",
+  },
+  {
+    src: "/videogrally/video4.mp4",
+    title: "Prime Plot Locations",
+    caption: "Residential and commercial plots",
+  },
 ];
 
 export const testimonials = [
   {
-    name: "Ahmed Raza",
-    role: "Homeowner · DHA Phase 6, Lahore",
+    name: "Satisfied Client",
+    role: "Homeowner · DHA Lahore",
     quote:
-      "They handled drawings, material and labour themselves. I never had to chase three different people — the house looks exactly like the 3D they showed me.",
+      "Parkland helped us find our dream 2 kanal home in DHA. 100% professional and transparent.",
   },
   {
-    name: "Sana Iqbal",
-    role: "Homeowner · Citi Housing, Faisalabad",
-    quote:
-      "The elevation work is beautiful and the finishing is clean. Weekly site photos meant I always knew what was happening on my plot.",
-  },
-  {
-    name: "Bilal Hussain",
-    role: "Developer · Sialkot",
-    quote:
-      "Professional team, honest quantities and on-time slabs. We handed them a second duplex before the first one was even finished.",
-  },
-  {
-    name: "Hira Nadeem",
-    role: "Homeowner · Model Town, Lahore",
-    quote:
-      "Interiors were designed and installed by the same team that built the structure, so nothing had to be broken and redone.",
-  },
-  {
-    name: "Usman Tariq",
-    role: "Homeowner · Johar Town, Lahore",
-    quote:
-      "Renovation of a 20-year-old house — new facade, new layout, finished in time and within the range they quoted.",
+    name: "Investor",
+    role: "Property investor · DHA Lahore",
+    quote: "Best team for investment in DHA. We got amazing returns within 6 months.",
   },
 ];
 
 export const services = [
   {
-    slug: "architecture",
-    title: "Architecture Design",
+    slug: "luxury-residential",
+    title: "Luxury Residential Properties",
     image: img.luxuryHouse,
-    short: "2D planning, 3D elevation design and complete working drawings for your plot.",
-    body: "2D planning, 3D elevation design and complete working drawings tailored to your plot size and family needs. Every drawing is developed until you approve each detail, so nothing is left to guesswork on site.",
+    short: "1 Kanal and 2 Kanal bungalows, villas, and houses across all DHA phases.",
+    body: "Ready-to-move and under-construction homes selected for quality, location, and long-term value.",
   },
   {
-    slug: "construction",
-    title: "Construction",
+    slug: "plots",
+    title: "Residential & Commercial Plots",
     image: img.brickFront,
-    short: "Grey structure and finishing packages with quality material and trained labour.",
-    body: "Grey structure and finishing packages with quality material, trained labour and transparent site reporting. Our own supervised crews cast columns, beams and slabs strictly to the approved drawings.",
+    short: "Prime residential and commercial plots from Phase 1 to Phase 9.",
+    body: "Every file is carefully checked and physically verified by our DHA-based team before we recommend it.",
   },
   {
-    slug: "interior",
-    title: "Interior Design",
+    slug: "commercial",
+    title: "Commercial Buildings & Offices",
     image: img.greyClassic,
-    short: "Living, bedroom, kitchen and ceiling design with lighting and furniture detail.",
-    body: "Living, bedroom, kitchen and ceiling design with lighting layouts, furniture detail and execution — designed and installed by the same team that built your structure.",
+    short: "High-ROI commercial plots and corporate buildings in prime DHA zones.",
+    body: "Find the right commercial location for your business, rental income, or next strategic investment.",
   },
   {
-    slug: "renovation",
-    title: "Renovation",
+    slug: "investment-advisory",
+    title: "Investment Advisory",
     image: img.completedVilla,
-    short: "Facade upgrades, layout changes and full renovation of existing spaces.",
-    body: "Facade upgrades, layout changes and full renovation of existing homes and commercial spaces — re-elevated, remodelled and finished without you leaving the neighbourhood you love.",
-  },
-  {
-    slug: "visualisation",
-    title: "3D Visualisation",
-    image: img.classicMansion,
-    short: "Photoreal exterior and interior renders before a single brick is laid.",
-    body: "Photoreal exterior and interior renders so you can see your home before a single brick is laid. Materials, lighting and landscaping are all visualised so approvals are quick and confident.",
-  },
-  {
-    slug: "marketing",
-    title: "Marketing & Media",
-    image: img.spanishVilla,
-    short: "Photography, reels and brand content for developers and builders.",
-    body: "Photography, reels and brand content for developers and builders who want their work seen — the same media team that produces our own project films.",
+    short: "Market analysis and expert guidance to help you achieve real returns.",
+    body: "We compare phases, plot sizes, demand, and future development so your investment decision is grounded in the market.",
   },
 ];
 
 export const registrations = [
-  "Lahore",
-  "Faisalabad",
-  "Sialkot",
-  "Architecture Design",
-  "Interior Design Studio",
-  "Construction Company",
+  "DHA Lahore Phase 1",
+  "DHA Lahore Phase 2",
+  "DHA Lahore Phase 5",
+  "DHA Lahore Phase 6",
+  "DHA Lahore Phase 8",
+  "DHA Lahore Phase 9",
 ];
 
 export const process = [
-  { step: "01", title: "Consultation", body: "We discuss your plot, budget and requirements — in person or on WhatsApp." },
-  { step: "02", title: "Design", body: "Floor plans and 3D elevations are developed until you approve every detail." },
-  { step: "03", title: "Execution", body: "Grey structure and finishing delivered by our own supervised site teams." },
-  { step: "04", title: "Handover", body: "Final finishing, cleaning and a walk-through before your keys are handed over." },
+  {
+    step: "01",
+    title: "Tell us your goal",
+    body: "Share your budget, preferred phase, property type, and timeline.",
+  },
+  {
+    step: "02",
+    title: "Review verified options",
+    body: "We shortlist suitable homes, plots, buildings, or offices from our network.",
+  },
+  {
+    step: "03",
+    title: "Make a clear decision",
+    body: "Our team explains pricing, documents, location, and potential before you commit.",
+  },
+  {
+    step: "04",
+    title: "Complete the transfer",
+    body: "From negotiation to paperwork and transfer, we stay with you through the finish.",
+  },
 ];
 
 export const galleryImages = [

@@ -24,6 +24,9 @@ export function VideoGallery() {
         void video.play().catch(() => undefined);
       });
       setActive(i);
+    } else if (video.muted) {
+      video.muted = false;
+      setActive(i);
     } else {
       video.pause();
       setActive(null);
@@ -45,9 +48,10 @@ export function VideoGallery() {
                   refs.current[i] = el;
                 }}
                 src={v.src}
-                poster={v.poster}
                 playsInline
-                preload="metadata"
+                autoPlay
+                loop
+                preload="auto"
                 muted
                 onEnded={() => setActive(null)}
                 className="block h-full w-full object-cover"

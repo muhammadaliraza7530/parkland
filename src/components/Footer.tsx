@@ -5,13 +5,18 @@ import { navLinks, site } from "@/lib/site-data";
 export function Footer() {
   return (
     <footer className="border-t border-border bg-card/40">
-      <div className="mx-auto grid max-w-7xl gap-10 px-5 py-16 lg:grid-cols-4 lg:px-8">
+      <div className="mx-auto grid max-w-7xl gap-10 px-5 py-16 lg:grid-cols-5 lg:px-8">
         <div className="lg:col-span-2">
           <div className="flex items-center gap-3">
-            <img src={site.logo} alt="Parkland Real Estate Group logo" className="h-20 w-auto max-w-[270px] object-contain" />
+            <img
+              src={site.logo}
+              alt="Parkland Real Estate logo"
+              className="h-20 w-auto max-w-[270px] object-contain"
+            />
           </div>
           <p className="mt-5 max-w-md text-sm leading-relaxed text-muted-foreground">
-            {site.tagline}. Property guidance and carefully selected opportunities for buyers and investors.
+            {site.tagline}. Property guidance and carefully selected opportunities for buyers and
+            investors.
           </p>
           <div className="mt-6 flex flex-wrap gap-3 text-xs font-semibold uppercase tracking-[0.16em]">
             {[
@@ -34,15 +39,30 @@ export function Footer() {
         </div>
 
         <div>
-          <h3 className="text-xs font-bold uppercase tracking-[0.28em] text-primary">Explore</h3>
+          <h3 className="text-xs font-bold uppercase tracking-[0.28em] text-primary">
+            Quick links
+          </h3>
           <ul className="mt-5 space-y-3">
             {navLinks.map((l) => (
               <li key={l.to}>
-                <Link to={l.to} className="text-sm text-muted-foreground transition-colors hover:text-primary">
+                <Link
+                  to={l.to}
+                  className="text-sm text-muted-foreground transition-colors hover:text-primary"
+                >
                   {l.label}
                 </Link>
               </li>
             ))}
+          </ul>
+        </div>
+
+        <div>
+          <h3 className="text-xs font-bold uppercase tracking-[0.28em] text-primary">Services</h3>
+          <ul className="mt-5 space-y-3 text-sm text-muted-foreground">
+            <li>Residential plots</li>
+            <li>Luxury homes</li>
+            <li>Commercial property</li>
+            <li>Investment advisory</li>
           </ul>
         </div>
 
@@ -73,9 +93,7 @@ export function Footer() {
         <p>
           © {new Date().getFullYear()} {site.name}. All rights reserved.
         </p>
-        <p className="mt-2 tracking-[0.14em] uppercase">
-          Design and develop by <span className="font-bold text-primary">Brand Up</span>
-        </p>
+        <p className="mt-2 tracking-[0.14em] uppercase">Smart Deals. Real Returns.</p>
       </div>
     </footer>
   );

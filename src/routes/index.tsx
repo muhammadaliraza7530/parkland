@@ -14,16 +14,16 @@ import { CtaBand } from "@/components/PageBits";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Parkland Real Estate Group — Trusted Property Opportunities" },
+      { title: "Parkland Real Estate - Smart Deals. Real Returns." },
       {
         name: "description",
         content:
-          "Parkland Real Estate Group connects buyers and investors with trusted property opportunities.",
+          "Parkland Real Estate connects buyers, sellers, and investors with verified DHA Lahore property opportunities.",
       },
-      { property: "og:title", content: "Parkland Real Estate Group" },
+      { property: "og:title", content: "Parkland Real Estate" },
       {
         property: "og:description",
-        content: "Trusted property opportunities from Parkland Real Estate Group.",
+        content: "Verified homes, plots, commercial property, and investment advice in DHA Lahore.",
       },
     ],
   }),
@@ -83,7 +83,7 @@ function Hero() {
         </p>
         <HeroWordmark />
         <p className="mx-auto mt-1 text-[11px] font-semibold uppercase tracking-[0.5em] text-foreground/80 sm:text-sm">
-          Homes
+          DHA Lahore
         </p>
 
         <h1
@@ -92,7 +92,10 @@ function Hero() {
         >
           {slide.title}
         </h1>
-        <p key={slide.highlight} className="animate-rise-in mx-auto mt-5 max-w-2xl text-sm leading-relaxed text-gray-300 sm:text-base">
+        <p
+          key={slide.highlight}
+          className="animate-rise-in mx-auto mt-5 max-w-2xl text-sm leading-relaxed text-gray-300 sm:text-base"
+        >
           {slide.highlight}
         </p>
 
@@ -101,7 +104,7 @@ function Hero() {
             to="/projects"
             className="btn-shake sheen-on-hover inline-flex items-center gap-2 rounded-full bg-primary px-7 py-4 text-xs font-bold uppercase tracking-[0.18em] text-primary-foreground transition-colors hover:bg-accent"
           >
-            View our work <ArrowRight className="size-4" />
+            View listings <ArrowRight className="size-4" />
           </Link>
           <a
             href={site.whatsapp}
@@ -109,7 +112,7 @@ function Hero() {
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 rounded-full border border-primary/60 px-7 py-4 text-xs font-bold uppercase tracking-[0.18em] text-primary transition-colors hover:bg-primary hover:text-primary-foreground"
           >
-            <Phone className="size-4" /> WhatsApp us
+            <Phone className="size-4" /> Book free consultation
           </a>
         </div>
 
@@ -142,7 +145,7 @@ function HomePage() {
           <SectionHeading
             eyebrow="Showreel"
             title="See how we build"
-            intro="A short film of our sites, elevations and finished homes."
+            intro="A closer look at the places and properties our team is watching."
             align="center"
           />
           <Reveal className="mt-10">
@@ -169,24 +172,26 @@ function HomePage() {
       <section className="py-20 lg:py-28">
         <div className="mx-auto max-w-7xl px-5 lg:px-8">
           <SectionHeading
-            eyebrow="What we do"
-            title="Design, construction and finishing under one roof"
-            intro="One accountable team from the first sketch to the last light fitting."
+            eyebrow="Our services"
+            title="Property guidance that moves with you"
+            intro="Luxury homes, prime plots, commercial buildings, and investment advice across DHA Lahore."
           />
           <div className="mt-12">
             <AutoScroller speed={180}>
               {services.map((s, i) => (
                 <Reveal key={s.slug} delay={i * 80} className="h-full">
                   <article className="lit-panel flex h-full w-[280px] shrink-0 flex-col overflow-hidden bg-card sm:w-[360px]">
-                    <img 
-                      src={s.image} 
-                      alt={s.title} 
-                      loading="lazy" 
-                      className="aspect-16/10 w-full shrink-0 object-cover" 
+                    <img
+                      src={s.image}
+                      alt={s.title}
+                      loading="lazy"
+                      className="aspect-16/10 w-full shrink-0 object-cover"
                     />
                     <div className="flex flex-col p-5 sm:p-6">
                       <h3 className="text-base font-bold sm:text-lg">{s.title}</h3>
-                      <p className="mt-2 text-xs leading-relaxed text-muted-foreground sm:text-sm">{s.short}</p>
+                      <p className="mt-2 text-xs leading-relaxed text-muted-foreground sm:text-sm">
+                        {s.short}
+                      </p>
                     </div>
                   </article>
                 </Reveal>
@@ -200,9 +205,9 @@ function HomePage() {
       <section className="overflow-hidden border-y border-border bg-card/30 py-20 lg:py-28">
         <div className="mx-auto max-w-7xl px-5 lg:px-8">
           <SectionHeading
-            eyebrow="Our projects"
-            title="Villas, Spanish homes and modern residences"
-            intro="Drag with finger to scroll manually, or let it auto-play."
+            eyebrow="Featured listings"
+            title="Latest properties in DHA Lahore"
+            intro="Explore verified homes, plots, and commercial opportunities selected by our local team."
           />
         </div>
         <div className="mt-12">
@@ -222,7 +227,9 @@ function HomePage() {
                   className="aspect-4/3 w-full shrink-0 object-cover"
                 />
                 <div className="flex flex-col p-5">
-                  <span className="text-[10px] font-bold uppercase tracking-[0.22em] text-primary">{p.status}</span>
+                  <span className="text-[10px] font-bold uppercase tracking-[0.22em] text-primary">
+                    {p.status}
+                  </span>
                   <h3 className="mt-1.5 text-base font-bold">{p.title}</h3>
                   <p className="mt-1 text-xs text-muted-foreground">{p.location}</p>
                 </div>
@@ -236,9 +243,9 @@ function HomePage() {
       <section className="py-20 lg:py-28">
         <div className="mx-auto max-w-6xl px-5 lg:px-8">
           <SectionHeading
-            eyebrow="Video gallery"
-            title="Four films from our sites"
-            intro="Tap any frame to play — starting one clip stops the others."
+            eyebrow="DHA Lahore insights"
+            title="See the opportunities up close"
+            intro="Explore the places and properties our team is watching."
             align="center"
           />
           <VideoGallery />
@@ -249,9 +256,9 @@ function HomePage() {
       <section className="overflow-hidden border-y border-border bg-card/30 py-20 lg:py-28">
         <div className="mx-auto max-w-7xl px-5 lg:px-8">
           <SectionHeading
-            eyebrow="Latest posts"
-            title="Coming soon & on-site updates"
-            intro="Our published announcements, shown complete — nothing cropped."
+            eyebrow="Latest updates"
+            title="Property news and opportunities"
+            intro="Stay close to the latest Parkland listings and market updates."
           />
         </div>
         <div className="mt-12">
@@ -291,7 +298,10 @@ function HomePage() {
         </div>
       </section>
 
-      <CtaBand />
+      <CtaBand
+        title="Ready to invest smart?"
+        body="Let our experts find you the best deal in DHA Lahore today."
+      />
     </>
   );
 }

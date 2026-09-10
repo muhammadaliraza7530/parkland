@@ -1,24 +1,29 @@
-import { img, showreelUrl as reelUrl, process as processSteps, services as serviceList } from "@/lib/site-data";
+import {
+  img,
+  showreelUrl as reelUrl,
+  process as processSteps,
+  services as serviceList,
+} from "@/lib/site-data";
 
 export const logoUrl = img.logo;
 export const showreelUrl = reelUrl;
 
 export const company = {
-  name: "Aspiring Homes",
-  tagline: "Architecture · Interior · Construction",
-  since: "Making Quality Houses Since 2019",
-  phoneDisplay: "0306 0221896",
-  phoneTel: "+923060221896",
+  name: "Parkland Real Estate",
+  tagline: "Smart Deals. Real Returns.",
+  since: "Trusted DHA Lahore property specialists",
+  phoneDisplay: "0321 8464704",
+  phoneTel: "+923218464704",
   whatsapp:
-    "https://wa.me/923060221896?text=Hello%20Aspiring%20Homes%2C%20I%20would%20like%20to%20discuss%20a%20construction%20project.",
-  email: "aspiringtalks@gmail.com",
-  addressShort: "New Super Town, Lahore",
-  address: "DHA Phase 6, Lahore, Punjab, Pakistan",
-  hours: "Mon–Sat, 9am to 7pm",
+    "https://wa.me/923218464704?text=Hello%20Parkland%20Real%20Estate%2C%20I%20would%20like%20to%20discuss%20a%20property.",
+  email: "info@parklandrealestate.pk",
+  addressShort: "DHA Phase-6, Lahore",
+  address: "Plaza No 2, First Floor, Sector L, Phase-6, DHA, Lahore",
+  hours: "Always open · 7 days a week",
   socials: [
-    { label: "Instagram", href: "https://instagram.com/aspiringhomesofficial" },
-    { label: "Facebook", href: "https://facebook.com/AspiringHomes" },
-    { label: "YouTube", href: "https://youtube.com/@AspiringHomes" },
+    { label: "Instagram", href: "https://instagram.com/parklandrealestate" },
+    { label: "Facebook", href: "https://facebook.com/parklandrealestate" },
+    { label: "YouTube", href: "https://youtube.com/@parklandrealestate" },
   ],
 };
 
@@ -26,8 +31,8 @@ export type Project = {
   slug: string;
   title: string;
   location: string;
-  status: "Completed" | "Under Construction" | "Upcoming";
-  category: "Modern" | "Classic" | "Spanish" | "Grey Structure";
+  status: "Available" | "Under Offer" | "Sold";
+  category: "Luxury Home" | "Residential Plot" | "Commercial" | "Investment";
   image: string;
   gallery: string[];
   blurb: string;
@@ -35,70 +40,66 @@ export type Project = {
 
 export const projects: Project[] = [
   {
-    slug: "the-reflection-sialkot",
-    title: "The Reflection — Duplex",
-    location: "Sialkot",
-    status: "Upcoming",
-    category: "Modern",
+    slug: "dha-phase-6-luxury-home",
+    title: "2 Kanal Luxury Home",
+    location: "DHA Lahore Phase 6",
+    status: "Available",
+    category: "Luxury Home",
     image: img.luxuryVilla,
     gallery: [img.luxuryVilla, img.luxuryHouse, img.modernVilla],
-    blurb:
-      "A contemporary duplex with a travertine-and-graphite elevation, layered facade lighting and glass balustrades.",
+    blurb: "A spacious luxury home in one of DHA Lahore's most sought-after residential phases.",
   },
   {
-    slug: "spanish-courtyard-villa",
-    title: "Spanish Courtyard Villa",
-    location: "Lahore",
-    status: "Under Construction",
-    category: "Spanish",
+    slug: "dha-phase-5-family-villa",
+    title: "1 Kanal Family Villa",
+    location: "DHA Lahore Phase 5",
+    status: "Available",
+    category: "Luxury Home",
     image: img.spanishVilla,
     gallery: [img.spanishVilla, img.courtyard, img.classicMansion],
-    blurb:
-      "White stucco walls, terracotta roof tiles and an arched colonnade wrapped around a private landscaped courtyard.",
+    blurb: "A move-in-ready villa with generous living spaces and a prime residential location.",
   },
   {
-    slug: "classical-grand-residence",
-    title: "Classical Grand Residence",
-    location: "Citi Housing, Faisalabad",
-    status: "Upcoming",
-    category: "Classic",
+    slug: "dha-phase-8-commercial-plot",
+    title: "Commercial Plot Opportunity",
+    location: "DHA Lahore Phase 8",
+    status: "Available",
+    category: "Commercial",
     image: img.classicMansion,
     gallery: [img.classicMansion, img.courtyard, img.completedVilla],
     blurb:
-      "Columns, arched glazing and a double-height entrance foyer designed for a landmark corner plot.",
+      "A high-potential commercial opportunity positioned for future growth and strong demand.",
   },
   {
-    slug: "modern-luxury-house",
-    title: "Modern Luxury House",
-    location: "Lahore",
-    status: "Completed",
-    category: "Modern",
+    slug: "dha-phase-6-modern-residence",
+    title: "Modern Luxury Residence",
+    location: "DHA Lahore Phase 6",
+    status: "Available",
+    category: "Luxury Home",
     image: img.luxuryHouse,
     gallery: [img.luxuryHouse, img.modernVilla, img.brickFront],
-    blurb:
-      "Travertine and dark stone facade with a double-height entrance, black-framed glazing and a glass balcony.",
+    blurb: "A polished modern residence for buyers seeking comfort, design, and lasting value.",
   },
   {
-    slug: "grey-modern-residence",
-    title: "Grey Modern Residence",
-    location: "Lahore",
-    status: "Completed",
-    category: "Modern",
+    slug: "dha-phase-9-residential-plot",
+    title: "Residential Plot",
+    location: "DHA Lahore Phase 9",
+    status: "Available",
+    category: "Residential Plot",
     image: img.modernVilla,
     gallery: [img.modernVilla, img.greyClassic, img.brickFront],
-    blurb:
-      "A crisp grey-and-black elevation with full-height glazing, a covered carport and a minimal front garden.",
+    blurb: "A verified residential plot for a custom home in a developing DHA phase.",
   },
   {
-    slug: "corner-plot-residence",
-    title: "Corner Plot Residence",
-    location: "Sialkot",
-    status: "Under Construction",
-    category: "Modern",
+    slug: "dha-phase-6-corporate-office",
+    title: "Corporate Office Building",
+    location: "DHA Lahore Phase 6",
+    status: "Available",
+    category: "Commercial",
     image: img.brickFront,
     gallery: [img.brickFront, img.greyClassic, img.luxuryHouse],
     blurb:
-      "Two-storey corner house with large glass panels, a shaded carport and a warm stone-and-graphite palette.",
+      "A prominent commercial building suited to a corporate office or income-focused investment.",
   },
 ];
 
