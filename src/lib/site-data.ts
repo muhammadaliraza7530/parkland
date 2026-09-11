@@ -86,58 +86,82 @@ export const stats = [
 /** Branded social posts — shown full-frame, never cropped. */
 export const posts = [
   {
-    image: "/posts/post-1.jpg",
+    image: "/posts/post-1.jpeg",
     title: "DHA Phase 6 Luxury Home",
     location: "DHA Lahore",
     tag: "Featured property",
   },
   {
-    image: "/posts/post-2.jpg",
+    image: "/posts/post-2.jpeg",
     title: "Prime Residential Plot",
     location: "DHA Lahore Phase 9",
     tag: "Verified listing",
   },
   {
-    image: "/posts/post-3.jpg",
+    image: "/posts/post-3.jpeg",
     title: "DHA Commercial Opportunity",
     location: "DHA Lahore Phase 8",
     tag: "Investment pick",
   },
   {
-    image: "/posts/post-4.jpg",
+    image: "/posts/post-4.jpeg",
     title: "Family Villa for Sale",
     location: "DHA Lahore Phase 5",
     tag: "Available now",
   },
   {
-    image: "/posts/post-5.jpg",
+    image: "/posts/post-5.jpeg",
     title: "Commercial Building",
     location: "DHA Lahore Phase 6",
     tag: "Verified listing",
   },
   {
-    image: "/posts/post-6.jpg",
+    image: "/posts/post-6.jpeg",
     title: "Investment Advisory",
     location: "All DHA Lahore phases",
     tag: "Market insight",
   },
   {
-    image: "/posts/post-7.jpg",
+    image: "/posts/post-7.jpeg",
     title: "Buy, Sell, Invest",
     location: "DHA Lahore",
     tag: "Parkland advice",
   },
   {
-    image: "/posts/post-8.jpg",
+    image: "/posts/post-8.jpeg",
     title: "DHA Phase Guide",
     location: "DHA Lahore",
     tag: "Local insight",
   },
   {
-    image: "/posts/post-9.jpg",
+    image: "/posts/post-9.jpeg",
     title: "Smart Property Decisions",
     location: "DHA Lahore",
     tag: "Parkland advice",
+  },
+  {
+    image: "/posts/post-10.jpeg",
+    title: "DHA Lahore Market Watch",
+    location: "DHA Lahore",
+    tag: "Market insight",
+  },
+  {
+    image: "/posts/post-11.jpeg",
+    title: "Your Next Property Move",
+    location: "DHA Lahore",
+    tag: "Parkland advice",
+  },
+  {
+    image: "/posts/post-12.jpeg",
+    title: "Verified Property Opportunities",
+    location: "DHA Lahore",
+    tag: "Featured property",
+  },
+  {
+    image: "/posts/post-13.jpeg",
+    title: "Invest With Confidence",
+    location: "DHA Lahore",
+    tag: "Investment pick",
   },
 ];
 
@@ -202,7 +226,7 @@ export const services = [
   },
   {
     slug: "investment-advisory",
-    title: "Investment Advisory",
+    title: "Investment Advisory Services",
     image: img.completedVilla,
     short: "Market analysis and expert guidance to help you achieve real returns.",
     body: "We compare phases, plot sizes, demand, and future development so your investment decision is grounded in the market.",

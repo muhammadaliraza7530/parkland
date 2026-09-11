@@ -18,8 +18,8 @@ export function Header() {
   return (
     <header
       className={cn(
-        "fixed inset-x-0 top-0 z-50 transition-all duration-500",
-        scrolled ? "border-b border-border bg-background/85 backdrop-blur-xl" : "bg-transparent",
+        "fixed inset-x-0 top-0 z-50 border-b border-white/10 bg-black transition-all duration-500",
+        scrolled ? "shadow-lg shadow-black/20" : "",
       )}
     >
       <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-5 lg:h-24 lg:px-8">
@@ -27,7 +27,7 @@ export function Header() {
           <img
             src={site.logo}
             alt="Parkland Real Estate Group logo"
-            className="h-14 w-auto max-w-[180px] object-contain transition-transform duration-500 group-hover:scale-[1.02] lg:h-16 lg:max-w-[220px]"
+            className="h-16 w-auto max-w-[210px] object-contain transition-transform duration-500 group-hover:scale-[1.02] lg:h-20 lg:max-w-[260px]"
           />
         </Link>
 
@@ -37,7 +37,7 @@ export function Header() {
               key={l.to}
               to={l.to}
               activeProps={{ className: "text-primary" }}
-              className="text-xs font-semibold uppercase tracking-[0.2em] text-muted-foreground transition-colors hover:text-primary"
+              className="text-xs font-semibold uppercase tracking-[0.2em] text-white/75 transition-colors hover:text-primary"
             >
               {l.label}
             </Link>
@@ -52,7 +52,7 @@ export function Header() {
             type="button"
             aria-label="Toggle menu"
             onClick={() => setOpen((v) => !v)}
-            className="grid size-10 place-items-center rounded-md border border-border lg:hidden"
+            className="grid size-10 place-items-center rounded-md border border-white/20 text-white lg:hidden"
           >
             {open ? <X className="size-5" /> : <Menu className="size-5" />}
           </button>
@@ -60,7 +60,7 @@ export function Header() {
       </div>
 
       {open && (
-        <div className="border-t border-border bg-background/95 backdrop-blur-xl lg:hidden">
+        <div className="border-t border-white/10 bg-black lg:hidden">
           <nav className="mx-auto flex max-w-7xl flex-col px-5 py-4">
             {navLinks.map((l) => (
               <Link
@@ -68,7 +68,7 @@ export function Header() {
                 to={l.to}
                 onClick={() => setOpen(false)}
                 activeProps={{ className: "text-primary" }}
-                className="border-b border-border/60 py-3.5 text-sm font-semibold uppercase tracking-[0.18em] text-muted-foreground"
+                className="border-b border-white/10 py-3.5 text-sm font-semibold uppercase tracking-[0.18em] text-white/75"
               >
                 {l.label}
               </Link>
